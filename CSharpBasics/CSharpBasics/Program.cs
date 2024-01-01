@@ -7,11 +7,19 @@ namespace CSharpBasics
         // Basic code to run Main
         static void Main(string[] args)
         {
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            // Write in console and edit console background & text color
+            Console.BackgroundColor = ConsoleColor.Black; // Default Black
+            Console.ForegroundColor = ConsoleColor.White; // Default White
             Console.Clear();
             Console.WriteLine("This is a console Text test");
-            
+
+
+            // Get user input from console
+            Console.Write("What's your name?");
+
+            // Create Variable
+            string name = Console.ReadLine();
+            Console.WriteLine($"Hello {name}");
         }
     }
 }
