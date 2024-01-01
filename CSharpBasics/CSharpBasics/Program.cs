@@ -34,12 +34,33 @@ namespace CSharpBasics
             Console.WriteLine("Biggest Int : {0} , Smallest Int : {1}",biggestInt,smallestInt);
             Console.WriteLine("Biggest Long : {0} , Smallest Long : {1}", biggestLong, smallestLong);
 
-            // Decimals, Add M at the end
+            double biggestDouble = Double.MaxValue;
+            double smallestDouble = Double.MinValue;
 
+            Console.WriteLine("Biggest Int : {0} , Smallest Int : {1}", biggestDouble, smallestDouble);
+
+
+            // Decimals, Add M at the end
             decimal firstDecimal = 2.3123422123M;
             decimal secondDecimal = 3.2123455234m;
 
             Console.WriteLine("The sum of {0} and {1} = {2}",firstDecimal,secondDecimal,firstDecimal + secondDecimal);
+
+            //Casting 
+            bool boolFromString = bool.Parse("true");
+            int intFromString = int.Parse("12345");
+            double doubleFromString = double.Parse("1.2345");
+            string stringFroMDouble = doubleFromString.ToString();
+
+            Console.WriteLine($"Data Type: {stringFroMDouble.GetType()}");
+            double dblNum = 12.345;
+
+            //Explisit Conversion
+            Console.WriteLine($"Int: {(int)dblNum}");
+
+            //Implisit Conversion
+            int intNUm = 10;
+            long longNum = intNUm;
         }
     }
 }
