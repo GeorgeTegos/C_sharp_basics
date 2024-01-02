@@ -1,5 +1,8 @@
 ﻿using System;
 
+
+
+
 namespace CSharpBasics
 {
     public class Program
@@ -61,6 +64,22 @@ namespace CSharpBasics
             //Implisit Conversion
             int intNUm = 10;
             long longNum = intNUm;
+
+
+            // output formating examples
+
+            // X:c will format this value as $ currency
+            Console.WriteLine("Currency :{0:c}", 23.456);
+            // Put 0 infront , padding x amount ,  dx
+            Console.WriteLine("Pad with 0:{0:d4}", 23);
+            // put max X number of decimals  fx
+            Console.WriteLine("3 Decimals Max: {0:f3}", 23.423256);
+            // add commas and X amound of decimals.  nx
+            Console.WriteLine("Automatic Comas:{0:n2}", 12345);
+
+
         }
     }
 }
+
+
