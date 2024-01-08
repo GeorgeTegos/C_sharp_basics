@@ -131,7 +131,9 @@ namespace CSharpBasics
 
             Console.WriteLine("------------------------------------------------------");
 
-
+            ExtrasFile extrafileObj = new ExtrasFile(name,age);
+            extrafileObj.giveInfo();
+            extrafileObj.ageUp(5);
         }
     }
 }
